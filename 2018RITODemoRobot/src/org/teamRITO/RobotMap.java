@@ -37,12 +37,10 @@ public class RobotMap {
 	 * PWM example. The ID is the PWM port on the RoboRIO we plug the talon into.
 	 * The PWM controllers do not provide any feedback. All feedback has to be through external sensors.
 	 */
-	public static final int DRIVE_LEFT_PWM_ID = 0;			// PWM channel for LEFT side
-	public static final int DRIVE_RIGHT_PWM_ID = 2;			// PWM channel for RIGHT side.
-  public static final int DRIVE_RIGHT_CAN_ID_1 = 1;		// First CAN channel for right side
-  public static final int DRIVE_RIGHT_CAN_ID_2 = 2;		// Second CAN channel for right side
-  public static final int DRIVE_LEFT_CAN_ID_1 = 3;		// First CAN channel for left side
-  public static final int DRIVE_LEFT_CAN_ID_2 = 4;		// Second CAN channel for right side
+  	public static final int DRIVE_RIGHT_CAN_ID_1 = 1;		// First CAN channel for right side
+  	//public static final int DRIVE_RIGHT_CAN_ID_2 = 2;		// Second CAN channel for right side
+  	public static final int DRIVE_LEFT_CAN_ID_1 = 3;		// First CAN channel for left side
+  	//public static final int DRIVE_LEFT_CAN_ID_2 = 4;		// Second CAN channel for right side
 	/*
 	 * Drive style choices.
 	 */

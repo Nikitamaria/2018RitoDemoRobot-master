@@ -63,8 +63,8 @@ public class Robot extends IterativeRobot {
         
 	    // This is how you create controllers that use PWM ports on the RoboRIO.
         // if you have Victors, Sparks, or Talons
-	    leftController = new Spark(RobotMap.DRIVE_LEFT_PWM_ID);
-	    rightController = new Spark(RobotMap.DRIVE_RIGHT_PWM_ID);
+	    leftController = new VictorSP(RobotMap.DRIVE_LEFT_CAN_ID_1);
+	    rightController = new VictorSP(RobotMap.DRIVE_RIGHT_CAN_ID_1);
 	    // OR
 	    //leftController = new VictorSP(RobotMap.DRIVE_LEFT_PWM_ID);
 	    //rightController = new VictorSP(RobotMap.DRIVE_RIGHT_PWM_ID);
@@ -111,7 +111,7 @@ public class Robot extends IterativeRobot {
      */
     public void robotPeriodic() {
         Scheduler.getInstance().run();
-    }
+    
     
 	/**
      * This function is called once each time the robot enters Disabled mode.
